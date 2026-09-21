@@ -50,6 +50,8 @@ const Navbar = () => {
     }, 400);
   };
 
+  const isOpportunityPage = mounted && window.location.pathname.includes("/opportunity/");
+
   return (
     <>
       {/* ── Main Navbar ── */}
@@ -66,7 +68,7 @@ const Navbar = () => {
             className="flex items-center"
           >
             <Image
-              src={scrolled ? lightLogo : logo}
+              src={scrolled || isOpportunityPage ? lightLogo : logo}
               alt="Pearl Legacy"
               width={140}
               height={45}

@@ -5,6 +5,8 @@ import { useState, useRef } from "react";
 import { Smile, Send, Mail, X } from "lucide-react";
 import MagneticButton from "./MagneticButton";
 
+import { sendEmail } from "@/app/actions/email";
+
 const ContactForm = () => {
   const [formState, setFormState] = useState({
     name: "",
@@ -49,11 +51,11 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    e.stopPropagation();
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
 
     try {
-      const { sendEmail } = await import("@/app/actions/email");
       const result = await sendEmail(formState);
 
       if (result.success) {
@@ -149,7 +151,7 @@ const ContactForm = () => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-5 pt-2">
+          <form onSubmit={handleSubmit} method="POST" className="space-y-5 pt-2">
             {[
               { id: "name", label: "Name *" },
               { id: "email", label: "Email *", type: "email" },

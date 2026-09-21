@@ -8,8 +8,8 @@ import React from "react";
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "salmabegam@mntfuture.com",
-    pass: "haiq cgnc pyhg djks",
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
   },
 });
 
@@ -27,7 +27,7 @@ export async function sendEmail(formData: {
     );
 
     const mailOptions = {
-      from: `"Pearl Realty Enquiry" <salmabegam@mntfuture.com>`,
+      from: `"Pearl Realty Enquiry" <${process.env.SMTP_USER}>`,
       to: "salmabegam@mntfuture.com",
       subject: `New Institutional Enquiry: ${subject}`,
       html: emailHtml,
