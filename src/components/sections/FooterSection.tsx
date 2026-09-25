@@ -59,7 +59,7 @@ const FooterSection = () => {
                 {/* <Link href="#" className="text-gold/60 hover:text-gold transition-all duration-300 transform hover:scale-110">
                   <Instagram className="w-5 h-5" />
                 </Link> */}
-                <Link href="https://wa.me/971524933408" className="text-gold/60 hover:text-gold transition-all duration-300 transform hover:scale-110">
+                <Link href="https://wa.me/971585926469" className="text-gold/60 hover:text-gold transition-all duration-300 transform hover:scale-110">
                   <MessageCircle className="w-5 h-5" />
                 </Link>
               </div>
@@ -99,13 +99,13 @@ const FooterSection = () => {
                 <p className="font-body text-[10px] text-white/30 uppercase tracking-widest mb-3 flex items-center gap-2">
                   <Mail className="w-3 h-3" /> Secure Correspondence
                 </p>
-                <p className="font-display text-lg text-champagne/90">advisory@pearlrealty.ae</p>
+                <p className="font-display text-lg text-champagne/90">raghunath@pearlrealty.ae</p>
               </div>
               <div>
                 <p className="font-body text-[10px] text-white/30 uppercase tracking-widest mb-3 flex items-center gap-2">
                   <Phone className="w-3 h-3" /> Direct Line
                 </p>
-                <Link href="tel:+971524933408" className="font-display text-lg text-champagne/90 hover:text-gold transition-colors">+971 52 493 3408</Link>
+                <Link href="tel:+971585926469" className="font-display text-lg text-champagne/90 hover:text-gold transition-colors">+971 58 592 6469</Link>
               </div>
               <div>
                 <p className="font-body text-[10px] text-white/30 uppercase tracking-widest mb-3 flex items-center gap-2">

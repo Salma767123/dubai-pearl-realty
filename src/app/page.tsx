@@ -11,7 +11,7 @@ import ServicesSection from "@/components/sections/ServicesSection";
 import OffMarketSection from "@/components/sections/OffMarketSection";
 import ClientsSection from "@/components/sections/ClientsSection";
 import InsightsSection from "@/components/sections/InsightsSection";
-import TestimonialsSection from "@/components/sections/TestimonialsSection";
+// import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import CTASection from "@/components/sections/CTASection";
 import ContactSection from "@/components/sections/ContactSection";
 import FooterSection from "@/components/sections/FooterSection";
@@ -118,7 +118,8 @@ const HomePageContent = () => {
       </div>
 
       <InsightsSection />
-      <TestimonialsSection />
+      {/* Testimonials hidden for now at the client's request — uncomment (and its import) to bring it back */}
+      {/* <TestimonialsSection /> */}
       <CTASection />
       <ContactSection />
       <FooterSection />

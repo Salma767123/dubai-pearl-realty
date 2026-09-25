@@ -7,23 +7,23 @@ const contactDetails = [
   {
     id: "email",
     label: "EMAIL",
-    value: "advisory@pearlrealty.ae",
+    value: "raghunath@pearlrealty.ae",
     icon: Mail,
-    href: "mailto:advisory@pearlrealty.ae",
+    href: "mailto:raghunath@pearlrealty.ae",
   },
   {
     id: "phone",
     label: "PHONE",
-    value: "+971 52 493 3408",
+    value: "+971 58 592 6469",
     icon: Phone,
-    href: "tel:+971524933408",
+    href: "tel:+971585926469",
   },
   {
     id: "whatsapp",
     label: "WHATSAPP",
     value: "Priority Direct Chat",
     icon: MessageSquare,
-    href: "https://wa.me/971524933408",
+    href: "https://wa.me/971585926469",
   },
   {
     id: "location",

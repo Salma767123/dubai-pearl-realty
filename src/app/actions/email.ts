@@ -28,7 +28,9 @@ export async function sendEmail(formData: {
 
     const mailOptions = {
       from: `"Pearl Realty Enquiry" <${process.env.SMTP_USER}>`,
-      to: "salmabegam@mntfuture.com",
+      to: "raghunath@pearlrealty.ae",
+      // "Reply" in the inbox goes straight to the visitor, not to the sending Gmail
+      replyTo: email,
       subject: `New Institutional Enquiry: ${subject}`,
       html: emailHtml,
     };
